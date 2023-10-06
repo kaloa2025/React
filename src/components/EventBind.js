@@ -22,7 +22,8 @@ export class EventBind extends Component {
         <h1>Message:{this.state.message}</h1>
         <br></br>
         {/* <button onClick={this.clickHandler}>ChangeMessage</button> */}
-        <button onClick={this.clickHandler.bind(this)}>Change</button> 
+        {/* <button onClick={this.clickHandler.bind(this)}>Change</button>  */}
+        <button onClick={() => {this.clickHandler()}}>Click</button> 
         </div>
     )
   }

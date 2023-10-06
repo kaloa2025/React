@@ -15,13 +15,17 @@ import Counter from './components/Counter';
 import HookCounter2 from './components/HookCounter2';
 import Discount from './components/Discount';
 import EventBind from './components/EventBind';
+import UserGreeting from './components/UserGreeting';
+import Greeting from './components/Greeting';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <EventBind></EventBind>
+      <Greeting isloggedIn={true}></Greeting>
+      {/* <UserGreeting isloggedIn={true}></UserGreeting> */}
+      {/* <EventBind></EventBind> */}
       {/*<Discount></Discount>*/}
       {/*<HookCounter2 value={2}/>*/}
       {/*<Counter value={3}></Counter>*/}
