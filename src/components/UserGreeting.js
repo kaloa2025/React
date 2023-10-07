@@ -15,6 +15,7 @@ export class UserGreeting extends Component {
     }
   render() 
   {
+    //element approach
     // let message
     // //if(this.state.isloggedIn)
     // if(this.props.isloggedIn)

@@ -1,9 +1,23 @@
-import React from 'react'
-//rfc
-export default function Greeting(props) 
+import React, { useState } from 'react'
+function Greeting() {
+  const intialValue=false
+  let [isloggedIn, setLog] = useState(intialValue)
+function Login()
 {
-    props.isloggedIn=false
-  return (
-    (props.isloggedIn)?<h1>Welcome aalok</h1>:<h1>Hello Guest</h1>
-  )
+  setLog(true)
 }
+if(isloggedIn)
+{
+  return(<div>Welcome Aalok</div>)
+}
+else
+{
+  return(
+    <div>
+    <h2>Welcome Guest</h2>
+    <button onClick={Login}>ClickMe!</button>
+  </div>
+)
+}
+}
+export default Greeting

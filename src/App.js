@@ -17,13 +17,15 @@ import Discount from './components/Discount';
 import EventBind from './components/EventBind';
 import UserGreeting from './components/UserGreeting';
 import Greeting from './components/Greeting';
+import Greeting2 from './components/Greeting2';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <Greeting isloggedIn={true}></Greeting>
+      {/* <Greeting></Greeting> */}
+      <Greeting2 isLogged={false}></Greeting2>
       {/* <UserGreeting isloggedIn={true}></UserGreeting> */}
       {/* <EventBind></EventBind> */}
       {/*<Discount></Discount>*/}
