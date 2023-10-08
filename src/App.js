@@ -25,7 +25,7 @@ function App() {
   return (
     <div className='App'>
       {/* <Greeting></Greeting> */}
-      <Greeting2 isLogged={false}></Greeting2>
+      <Greeting2 isLogged={false}/>
       {/* <UserGreeting isloggedIn={true}></UserGreeting> */}
       {/* <EventBind></EventBind> */}
       {/*<Discount></Discount>*/}
