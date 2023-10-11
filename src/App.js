@@ -18,14 +18,16 @@ import EventBind from './components/EventBind';
 import UserGreeting from './components/UserGreeting';
 import Greeting from './components/Greeting';
 import Greeting2 from './components/Greeting2';
+import NameList from './components/NameList';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
+      <NameList></NameList>
       {/* <Greeting></Greeting> */}
-      <Greeting2 isLogged={false}/>
+      {/* <Greeting2 isLogged={false}/> */}
       {/* <UserGreeting isloggedIn={true}></UserGreeting> */}
       {/* <EventBind></EventBind> */}
       {/*<Discount></Discount>*/}
