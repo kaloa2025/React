@@ -19,13 +19,17 @@ import UserGreeting from './components/UserGreeting';
 import Greeting from './components/Greeting';
 import Greeting2 from './components/Greeting2';
 import NameList from './components/NameList';
+import PostList from './components/PostList';
+import PhotosList from './components/PhotosList';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <NameList></NameList>
+      {/* <PhotosList></PhotosList> */}
+      <PostList></PostList>
+      {/* <NameList></NameList> */}
       {/* <Greeting></Greeting> */}
       {/* <Greeting2 isLogged={false}/> */}
       {/* <UserGreeting isloggedIn={true}></UserGreeting> */}
