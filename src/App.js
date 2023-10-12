@@ -21,14 +21,16 @@ import Greeting2 from './components/Greeting2';
 import NameList from './components/NameList';
 import PostList from './components/PostList';
 import PhotosList from './components/PhotosList';
+import HookCounter3 from './components/HookCounter3';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      {/* <PhotosList></PhotosList> */}
-      <PostList></PostList>
+      <HookCounter3></HookCounter3>
+      {/* <PhotosList></PhotosList>
+      <PostList></PostList> */}
       {/* <NameList></NameList> */}
       {/* <Greeting></Greeting> */}
       {/* <Greeting2 isLogged={false}/> */}
