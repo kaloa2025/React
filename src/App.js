@@ -23,13 +23,17 @@ import PostList from './components/PostList';
 import PhotosList from './components/PhotosList';
 import HookCounter3 from './components/HookCounter3';
 import HookCounter4 from './components/HookCounter4';
+import UserForm from './components/UserForm';
+import UserFormF from './components/UserFormF';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <HookCounter4></HookCounter4>
+      <UserFormF></UserFormF>
+      {/* <UserForm></UserForm> */}
+      {/* <HookCounter4></HookCounter4> */}
       {/* <HookCounter3></HookCounter3> */}
       {/* <PhotosList></PhotosList>
       <PostList></PostList> */}
