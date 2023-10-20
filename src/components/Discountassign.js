@@ -1,41 +1,42 @@
 import React, { useState } from 'react'
 
-function Discountassign() {
-    const [initialPrice, setIP] = useState("");
-    const [getDiscount, setGD] = useState("");
-    const handleInitialPrice = (event) => {
-        setIP(event.target.value)
+function Discount() { //constructor
+    let x=0;
+    const [price, setPrice] = useState(x)
+    const [disprice ,setdisprice]=useState(price)
+    
+    function handleInitialPrice(event)
+    {
+        setPrice(event.target.value)
     }
     function Discount1()
     { //function
-        let dis1=initialPrice;
-        setGD(dis1-dis1*0.2)
+        let z=price-price*0.2
+        setdisprice(z)
     }
-    function Discount2()
-    { //function
-        let dis2=initialPrice;
-        setGD(dis2-dis2*0.5)
+    const Discount2= () =>
+    { //arrow function
+        let z=price-price*0.5
+        setdisprice(z)
     }
-    function Discount3()
-    { //function
-        let dis3=initialPrice;
-        setGD(dis3-dis3*0.6)
+    const Discount3= () =>
+    { //arrow function
+        let z=price-price*0.7
+        setdisprice(z)
     }
-    function handleGetDiscount(event){
-        setGD(event.target.value)
+    function handleSubmit(event)
+    {
+        event.preventDefault()
     }
-
-    return (
-        <form onSubmit={this.handleSubmit}>
-        <label>Enter the price : </label><br></br>
-        <input type='text' value={initialPrice} onChange={handleInitialPrice}></input><br></br>
-        <button type='submit' onClick={Discount1}>Discount1</button><br></br>
-        <button type='submit' onClick={Discount2}>Discount2</button><br></br>
-        <button type='submit' onClick={Discount3}>Discount3</button><br></br>
-        <label>Discount: </label><br></br>
-        <textarea value={getDiscount} onChange={handleGetDiscount}></textarea><br></br>
-        </form>
-        )
+return (
+    <form onSubmit={handleSubmit}>
+      <label>Enter Price:</label>
+      <input type='number' value={price} onChange={handleInitialPrice}></input><br></br>
+      <button type='submit' onClick={Discount1}>Discount1</button>
+      <button type='submit' onClick={Discount2}>Discount2</button>
+      <button type='submit' onClick={Discount3}>Discount3</button><br></br>
+      <textarea value={disprice}></textarea>
+    </form>
+  )
 }
-
-export default Discountassign
+export default Discount
