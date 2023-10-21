@@ -27,13 +27,15 @@ import UserForm from './components/UserForm';
 import UserFormF from './components/UserFormF';
 import Discountassign from './components/Discountassign';
 import ToggleCase from './components/ToggleCase';
+import Shop from './components/Shop';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <ToggleCase></ToggleCase>
+      {/* <ToggleCase></ToggleCase> */}
+      <Shop/>
       {/* <Discountassign></Discountassign> */}
       {/* <UserFormF></UserFormF> */}
       {/* <UserForm></UserForm> */}
