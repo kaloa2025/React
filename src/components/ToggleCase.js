@@ -8,7 +8,11 @@ function ToggleCase() {
     {
         setLT(event.target.value)
     }
-    function ToggleCase()
+    function ToggleCaseL()
+    {
+        settoUC(lowertext.toLowerCase())
+    } 
+    function ToggleCaseU()
     {
         settoUC(lowertext.toUpperCase())
     }    
@@ -21,9 +25,10 @@ function ToggleCase() {
     <form onSubmit={handleSubmit}>
         <label>Enter Text in lowercase</label><br></br>
         <input type='text' value={lowertext} onChange={handleLT}></input><br></br>
-        <label>Text in uppercase :</label><br></br>
+        <label>Toggled Case :</label><br></br>
         <textarea value={displaytext}></textarea><br></br>
-        <button type='Submit' onClick={ToggleCase}>Change Case</button>
+        <button type='Submit' onClick={ToggleCaseL}>Change To lowercase</button>
+        <button type='Submit' onClick={ToggleCaseU}>Change To uppercase</button>
     </form>
   )
 }

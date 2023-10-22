@@ -34,8 +34,8 @@ import Shop from './components/Shop';
 function App() {
   return (
     <div className='App'>
-      {/* <ToggleCase></ToggleCase> */}
-      <Shop/>
+      <ToggleCase></ToggleCase>
+      {/* <Shop/> */}
       {/* <Discountassign></Discountassign> */}
       {/* <UserFormF></UserFormF> */}
       {/* <UserForm></UserForm> */}
