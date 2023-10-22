@@ -30,7 +30,7 @@ function ToggleCase() {
     <form onSubmit={handleSubmit} style={{backgroundColor:"skyblue",width:'20%',marginLeft:'40%',marginRight:'40%',color:'white',padding:'2px'}}>
         <label>Enter Text in lowercase</label><br></br>
         <input type='text' value={lowertext} onChange={handleLT} style={{border:'skyblue'}}></input><br></br>
-        <label>Toggled Case :</label><br></br>
+        <label>Text :</label><br></br>
         <textarea value={displaytext} style={{border:'skyblue'}}></textarea><br></br>
         <button type='Submit' onClick={ToggleCaseL} style={button}>Change To lowercase</button>
         <button type='Submit' onClick={ToggleCaseU} style={button}>Change To uppercase</button>

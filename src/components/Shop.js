@@ -7,7 +7,7 @@ function Shop() {
         color:'Green',
         fontSize:'200%',
         backgroundImage:`url(/logo192.png)`,
-        padding:'3%',
+        padding:'2%',
         backgroundRepeat:'no-repeat'
     }
   return (
