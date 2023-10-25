@@ -29,13 +29,15 @@ import Discountassign from './components/Discountassign';
 import ToggleCase from './components/ToggleCase';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
+import About from './components/About';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <Contact primary={false}></Contact>
+      <About/>
+      {/* <Contact primaryatt={false}></Contact> */}
       {/* <ToggleCase></ToggleCase> */}
       {/* <Shop/> */}
       {/* <Discountassign></Discountassign> */}
