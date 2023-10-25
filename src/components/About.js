@@ -8,7 +8,7 @@ function About() {
         <h1 className={styles.primary}>About Page</h1>
         <h2 className={styles.fontxl}>About Us</h2>
         <h3 className={`${styles.primary} ${styles.fontxl}`}>Hello!</h3>
-        <h4 className={`${styles.primary} ${fontxl}`}>I am Aalok!</h4>
+        <h4 className={`${styles.fontxl} ${'primary'}`}>I am Aalok!</h4>
     </div>
   )
 }
