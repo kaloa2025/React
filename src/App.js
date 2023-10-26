@@ -30,13 +30,25 @@ import ToggleCase from './components/ToggleCase';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
 import About from './components/About';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 //const element = React.createElement('h1',{className:'h1',id:'hello'},'gm')
 //composing and decomposing component
 function App() {
   return (
     <div className='App'>
-      <About/>
+      <Router>
+        <nav>
+          <Link to='/'>Home</Link> &nbsp; &nbsp;
+          <Link to='/about'>About</Link> &nbsp; &nbsp;
+          <Link to='/contact'>Contact US</Link> &nbsp; &nbsp;
+        </nav>
+        <Routes>
+          <Route path='/' element={<Discount/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
+          <Route path='/contact' element={<Contact/>}></Route>
+        </Routes>
+      </Router>
       {/* <Contact primaryatt={false}></Contact> */}
       {/* <ToggleCase></ToggleCase> */}
       {/* <Shop/> */}

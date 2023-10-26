@@ -11,7 +11,6 @@ function About() {
         <h4 className={`${styles.fontxl} ${'primary'}`}>I am Aalok!</h4>
         <h5 className={`primary ${styles.fontxl}`}>Nice meeting you !</h5>
         <h5 className={`primary ${styles.primary}`}>Nice meeting you !</h5> */}
-        
     </div>
   )
 }
